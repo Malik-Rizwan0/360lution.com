@@ -1,0 +1,177 @@
+/* Importing Google Font - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  /* background: url("images/bg.jpg") #030728 no-repeat center; */
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  /* max-width: 1200px; */
+  padding: 30px 0px 100px 0px;
+}
+
+.card-list .card-item {
+  
+  min-width: 330px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: black;
+  user-select: none;
+  padding: 10px;
+  display: flex;
+  min-width: 335px;
+  max-width: 430px;
+  /* margin: auto; */
+  flex-direction: column;
+  align-items: center;
+}
+.review .card-list img:first-child {
+  background: bisque;
+  padding: 10px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  top: -37px;
+}
+
+.card-list .card-item .user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+  
+}
+.review-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-header img{
+  border-radius: 100%;
+  width :50px !important;
+  background-color: transparent;
+  padding: 0px !important;
+  position: static !important;
+
+}
+.review-header h5{
+  font-size: 14px;
+  font-weight: 600;
+}
+.review-header p{
+  font-size: 12px;
+}
+.card-list .card-item .card-desc{
+  padding: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slider-wrapper .swiper-pagination-bullet {
+  background: #fff;
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+
+.slider-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.slider-wrapper .swiper-slide-button ,.slider-wrapper1 .swiper-slide-button{
+  color: black;
+  /* margin-top: -55px; */
+  transition: 0.2s ease;
+  position: relative;
+  /* top: 70px;
+  left: 46%; */
+  width: 30PX;
+  height: 30PX;
+  border-radius: 50%;
+  border: 1px solid #1d1d1d !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-wrapper .swiper-slide-button:hover , .slider-wrapper1 .swiper-slide-button:hover{
+  background-color: #1d1d1d;
+  color: #fff !important;
+}
+.slider-wrapper .swiper-slide-button::after {
+  content: none;
+}
+.swiper-button-prev{
+  top: 79px;
+  left: 47%;
+}
+.swiper-button-next{
+  top: 70px;
+  left: 52%;
+
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+  color: #4658ff;
+}
+
+
+/* Service */
+.service .slider-wrapper1{
+  padding: 40px;
+}
+.service .card-item img{
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+}
+.service .card-item h5{
+  padding:10px;
+  width: 100%;
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.service .card-item p{
+  padding: 0px 10px !important;
+  text-align: start;
+}
+.service .swiper-button-next1{
+
+  left: 51%;
+}
+.service .swiper-button-prev1{
+  top: 30px;
+  left: 46%;
+}
+@media (max-width: 768px) {
+  .slider-wrapper {
+    margin: 0 10px 10px;
+    
+  padding: 30px 0px;
+  }
+
+  .slider-wrapper .swiper-slide-button {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    header a{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .main-btn{
+        padding: 5px 10px;
+    }
+    .discuss .row{
+        --bs-gutter-x: 0rem;
+    }
+    .faq .point button {
+        font-size: 14px;
+    }
+    .contact form .input{
+        padding: 5px;
+    }
+    footer .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .icon i{
+       margin: 5px;
+    }
+    footer .row p, footer .row li, footer .row ul{
+        font-size: 12px;
+    }
+    footer .row .footer-heading {
+        font-size: 16px;
+    }
+    h4{
+        font-size: 18px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    /* .mobile{
+        position: fixed;
+        top: 67px;
+        padding: 50px;
+        background-color: #fff;
+        z-index: 9999;
+    } */
+   
+    
+    .hero h2{
+        font-size: 24px;
+    }
+    .hero p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .hero .main-btn{
+        font-size: 14px;
+        padding:5px 10px ;
+        margin: 0px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    h5{
+        font-size: 14px;
+    }
+    .about img{
+        max-width: 400px;
+        margin: auto;
+    }
+    .service .slider-wrapper1{
+        padding: 5px;
+    }
+    .service .swiper-button-prev1{
+        left:43%
+    }
+    .discuss .row{
+        --bs-gutter-x: 0rem;
+    }
+    .service .swiper-button-next1{
+        left: 57%;
+    }
+    
+    footer .row p, footer .row li, footer .row ul{
+        font-size: 11px !important;
+    }
+    footer .row .footer-heading {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .contact form{
+        padding: 30px 0px;
+        max-width: 450px;
+        width: 100%;
+        margin: auto;
+    }
+    
+}
