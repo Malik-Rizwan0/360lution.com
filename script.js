@@ -20,8 +20,8 @@ const swiper = new Swiper('.slider-wrapper', {
   loop: true,
   grabCursor: true,
   spaceBetween: 15,
-  autoplay: false,
-    autoplayTimeout: 5000,
+  autoplay: true,
+    autoplayTimeout: 4000,
     autoplayHoverPause: true,
   // Pagination bullets
   // pagination: {
@@ -56,7 +56,7 @@ const swiper1 = new Swiper('.slider-wrapper1' , {
   loop: true,
   grabCursor: true,
   spaceBetween: 15,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
   // Pagination bullets
