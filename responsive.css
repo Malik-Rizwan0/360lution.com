@@ -66,6 +66,9 @@
     h5{
         font-size: 14px;
     }
+    .about-row{
+        flex-direction: column-reverse;
+    }
     .about img{
         max-width: 400px;
         margin: auto;
