@@ -1,0 +1,96 @@
+.imgbgc{
+    background-color: #103C34;
+    width: 100%;
+    height: 50%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 20px;
+}
+.imgbgc img{
+    position: relative;
+    bottom: -32px;
+}
+.blog-hero .hero-Icon img{
+    width: 50px;
+}
+.card , .card-header , .card-body , .card-footer{
+    background-color: #fff;
+    border: none;
+}
+.row{
+    --bs-gutter-x: 0px;
+}
+.card{
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+    --bs-card-cap-padding-x: 4px;
+}
+
+.card .card-header img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.card-full .card-footer p{
+    max-width: 400px;
+}
+.card-full .card-footer h5{
+    font-size: 24px !important;
+}
+.card .card-footer h5{
+    font-size: 20px;
+}
+.card .card-footer p{
+    font-size: 16px;
+    color:#747070;
+}
+.card-full .card-footer p{
+    font-size: 18px;
+}
+.card .category div{
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 5px;
+    background-color: #1b7c6023;
+    font-weight: 600;
+}
+.card .category .active{
+    color:  #327FC7;
+
+}
+
+.blog-date{
+    color: #1B7C60;
+    font-weight: 600;
+    font-size: 14px;
+}
+.All-blog .blog-option{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    padding: 10px 0px;
+}
+.All-blog .blog-option a{
+    font-size: 14px;
+    color: #747070;
+    text-decoration: none;
+}
+.All-blog .blog-option .active , .All-blog .blog-option a:hover {
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    color: #327FC7;
+    border-bottom: 2px solid #327FC7;
+}
+.All-blog .blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.All-blog .blogs .card{
+    
+    flex: 1 1 calc(33.33% - 20px); /* Ensure 3 cards fit in a row (minus gap space) */
+    margin: 10px;
+    min-width: 270px;
+    max-width: 340px;
+    box-sizing: border-box;
+}
+
