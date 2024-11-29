@@ -478,6 +478,7 @@ body {
     .faq .row button{
         font-size: 14px !important;
         padding: 0px;
+        font-weight: 600;
     }
     .faq .point{
         width: 100%;
@@ -650,6 +651,7 @@ body {
     }    
 }
 @media screen and (max-width:767px){
+    
     .service-hero h2{
         font-size: 27px !important;
     }
@@ -744,9 +746,17 @@ body {
         z-index: 9999;
     } */
    
-    
+    .hero-row{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    .hero-row > div{
+        width: 100%;
+    }
     .hero h2{
-        font-size: 24px;
+        font-size: 2rem;
     }
     .hero p{
         width: 100%;
@@ -755,10 +765,10 @@ body {
     .hero .main-btn{
         font-size: 14px;
         padding:5px 10px ;
-        margin: 0px;
+        margin: auto;
     }
     h4{
-        font-size: 18px;
+        font-size: 24px;
     }
     p{
         font-size: 14px !important;
@@ -768,11 +778,18 @@ body {
     }
     .about-row , .contact-row{
         display: flex;
+        /* flex-direction: column-reverse; */
+    }
+    .discuss .discuss-row{
+        display: flex;
         flex-direction: column-reverse;
     }
     .about img{
-        max-width: 400px;
+        /* max-width: 400px; */
         margin: auto;
+    }
+    .service  .service-link{
+        font-size: 6px;
     }
     .service .slider-wrapper1{
         padding: 5px;
