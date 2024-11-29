@@ -790,6 +790,7 @@ body {
     }
     .service  .service-link{
         font-size: 6px;
+        display: none !important;
     }
     .service .slider-wrapper1{
         padding: 5px;
