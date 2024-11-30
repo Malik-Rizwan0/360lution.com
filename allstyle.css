@@ -668,8 +668,62 @@ body {
 
 
 
+/* Single Blog website  */
+.sblog .sblog-data p ,.sblog .sblog-data li {
+    font-size: 18px;
+    color: #666;
+}
+.sblog .sblog-data ol li::marker{
+    font-weight: 700 !important;
+    color: #040404;
+}
+.sblog .sblog-data ol li h5{
+    color: #040404;
+}
+.sblog .recent-blogs .card-header{
+    background-color: #bbbbbb;
+}
+/* .recent-blogs {
+    background-color: var(--white-color);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    margin-top: 2rem;
+} */
 
+.sblog .recent-blogs h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #dedede;
+}
 
+.sblog .recent-blogs .recent-blog-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--white-smoke-color);
+    transition: all 0.3s ease;
+}
+
+/* .recent-blog-item:last-child {
+    border-bottom: none;
+} */
+
+.sblog .recent-blogs .recent-blog-item:hover {
+    transform: translateX(5px);
+}
+
+.sblog .recent-blogs  .recent-blog-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #327FC7;
+}
+
+.sblog .recent-blogs  .recent-blog-meta {
+    font-size: 0.8rem;
+}
 
 
 /* all page responsiveness */
