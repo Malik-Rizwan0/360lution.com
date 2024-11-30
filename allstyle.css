@@ -680,6 +680,12 @@ body {
 .sblog .sblog-data ol li h5{
     color: #040404;
 }
+.sblog .recent-blogs .recent-blog{
+    /* background-color: black; */
+    padding: 35px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
 .sblog .recent-blogs .card-header{
     background-color: #bbbbbb;
 }
@@ -704,6 +710,9 @@ body {
     padding: 1rem 0;
     border-bottom: 1px solid var(--white-smoke-color);
     transition: all 0.3s ease;
+    border-bottom: 1px solid black;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black; */
 }
 
 /* .recent-blog-item:last-child {
