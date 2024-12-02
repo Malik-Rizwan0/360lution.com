@@ -733,7 +733,37 @@ body {
 .sblog .recent-blogs  .recent-blog-meta {
     font-size: 0.8rem;
 }
-
+.contact-us form{
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact-us form label{
+    padding: 20px 0px 5px 0px;
+}
+.contact-us form input{
+    border: none;
+    width: 100%;
+}
+.contact-us form .input{
+    border: 1px solid #69696942;
+    padding: 8px;
+    border-radius: 5px;
+}
+.contact-us form textarea{
+    height: auto;
+}
+.contact-us form  .Submit{
+    margin: 20px 0px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+}
+.contact-us form  .Submit:hover{
+    background-color: #007BFF;
+    color: #fff;
+    transition: all 0.5s ;
+}
 
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {
