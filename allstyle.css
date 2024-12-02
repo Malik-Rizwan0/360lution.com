@@ -743,6 +743,7 @@ body {
 .contact-us form input{
     border: none;
     width: 100%;
+    outline: none;
 }
 .contact-us form .input{
     border: 1px solid #69696942;
@@ -956,5 +957,13 @@ body {
     .recentBlog .card .col-6{
         width: 100%;
     }
-
+    .contact-us form .input i{
+        font-size: 12px;
+    }
+    .contact-us form .input{
+        padding: 4px 3px;
+    }
+    .contact-us form input::placeholder , .contact-us form textarea::placeholder {
+        font-size: 12px;
+    }
 } 
