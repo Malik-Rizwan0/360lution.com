@@ -80,7 +80,7 @@ header .active {
 
 h4 {
     font-size: 26px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .about,
@@ -766,6 +766,125 @@ body {
     transition: all 0.5s ;
 }
 
+
+/* About US Page */
+.about-who{
+    background-color: #ffffff;
+}
+.about-who p{
+    font-size: 18px;
+    width: 100%;
+}
+.about-who p b{
+    color: #007BFF;
+}
+.about-our .mission{
+    padding: 20px 0px;
+}
+.about-our .mission .data{
+    border: 3px solid #007BFF;
+    padding: 10px;
+    border-radius: 20px 20px 0px 20px;
+}
+.about-our .mission .data h5{
+    font-size: 2rem;
+    color: #007BFF;
+}
+.about-our hr{
+    height: 3px !important;
+    background-color: #007BFF;
+    color: #007BFF;
+    opacity: 1;
+}
+.about-our .hand{
+    position: relative;
+    bottom: 20px;
+}
+
+.why-choose-us {
+
+    margin: 0 auto;
+}
+.why-choose-us h4 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.why-choose-us .circles-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-us .circle {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 0px 20px;
+    text-align: start;
+}
+
+.why-choose-us .icon {
+    border-radius: 50%;
+    border-top: 5px solid #0151A7 !important;
+    width: 180px !important;
+    height: 180px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-choose-us .icon i {
+    font-size: 70px;
+    color: #0151A7;
+}
+
+
+.why-choose-us h5 {
+    font-size: 1.2rem;
+    color: #007BFF;
+    width: 100%;
+    text-align: start;
+    margin-bottom: 10px;
+
+}
+
+.why-choose-us p {
+    
+    font-size: 0.9rem;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 7.5em;
+
+}
+
+@media screen and (max-width:992px) and (min-width:768px) {
+
+    .why-choose-us .circle {
+        margin: 30px auto;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .why-choose-us .circle {
+        margin: 10px auto;
+    }
+}
+
+
+
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {
     header a{
@@ -965,5 +1084,10 @@ body {
     }
     .contact-us form input::placeholder , .contact-us form textarea::placeholder {
         font-size: 12px;
+    }
+
+    /* about page  */
+    .why-choose-us .circle {
+        max-width: 90%;
     }
 } 
