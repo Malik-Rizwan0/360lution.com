@@ -884,6 +884,59 @@ body {
 }
 
 
+/* Portfolio Page  */
+.portfolio-hero h2{
+    font-weight: 600;
+}
+.portfolio-hero p{
+    width: 100%;
+}
+.portfolio-who .blue{
+    color: #007BFF;
+}
+.portfolio-who h4{
+    font-weight: 700;
+    font-size: 30px;
+}
+.portfolio-who button{
+    background-color: #007BFF;
+    padding: 5px 15px;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+}
+.portfolio-who button:hover{
+    background-color: transparent;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    transition: all 0.5s ;
+}
+.portfolio-who img{
+    border-radius: 20px;
+}
+.portfolio-card {
+    background-color:#ECF1FC;
+}
+.portfolio-card h4{
+    font-size: 40px;
+    font-weight: 600;
+}
+.portfolio-cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.portfolio-cards .card{
+    width: 30%;
+    margin: 10px;
+}
+.portfolio-cards .card .card-header{
+    padding: 5px;
+}
+.portfolio-cards .card img{
+    height: 250px;
+}
 
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {
@@ -947,6 +1000,15 @@ body {
     }
     .All-blog .blog-option a{
         font-size: 12px;
+    }
+
+    /* portfolio page  */
+    .portfolio-cards .card{
+        width: 32%;
+        margin: 10px 0px;
+    }
+    .portfolio-cards .card img{
+        height: 200px;
     }
 
 }
@@ -1053,6 +1115,17 @@ body {
     .card .category div {
         padding: 3px 6px;
         font-size: 14px;
+    }
+    
+    /* portfolio page  */
+    .portfolio-cards .card{
+        max-width: 50%;
+        min-width: 270px;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .portfolio-cards .card img{
+        height: 200px;
     }
 }
 @media screen and (max-width: 400px){
