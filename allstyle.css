@@ -1066,9 +1066,12 @@ body {
     .recruitment-cards .recruitment-card .icon{
         font-size: 40px;
     }
+    .recruitment-cards .recruitment-card .icon i{
+        font-size: 40px;
+    }
     .recruitment-cards .recruitment-card{
         padding: 10px;
-        height: 275px;
+        height: 290px;
 
     }
     .recruitment-cards .col-3{
