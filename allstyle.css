@@ -942,6 +942,48 @@ body {
     height: 250px;
 }
 
+
+/* Career Page  */
+.opening input , .opening select{
+    height: 40px;
+    width: 202px;
+    padding: 0px 0px 0px 10px ;
+    outline: none;
+}
+.job-cards .job-card{
+    margin: 20px 0px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.job-cards .job-card .data i , .job-cards .job-card .date{
+    color: #007BFF;
+}
+.job-cards .job-card .date{
+    font-size: 20px;
+}
+.recruitment-cards .recruitment-card{
+    padding: 20px;
+    height: 270px;
+}
+.recruitment-cards .recruitment-card .icon{
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: #04040431;
+}
+.recruitment-cards .recruitment-card .icon i{
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    color: #007BFF;
+}
+.recruitment-cards .recruitment-card h5{
+    font-weight: 600;
+
+}
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {
     header a{
@@ -1014,8 +1056,26 @@ body {
     .portfolio-cards .card img{
         height: 200px;
     }
-
+     /* Career Page  */
+    .opening h4 , .recruitment h4 {
+        font-size: 35px;
+    }
 }
+
+@media screen and (min-width:768px) and (max-width: 992px){
+    .recruitment-cards .recruitment-card .icon{
+        font-size: 40px;
+    }
+    .recruitment-cards .recruitment-card{
+        padding: 10px;
+        height: 275px;
+
+    }
+    .recruitment-cards .col-3{
+        padding: 5px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     /* .mobile{
         position: fixed;
@@ -1131,6 +1191,59 @@ body {
     .portfolio-cards .card img{
         height: 200px;
     }
+
+    /* career page  */
+    .job-cards .job-card .data , .job-cards .job-card .vacancies, .job-cards .job-card .apply{
+        display: flex;
+        width: 100%;
+        align-items: center !important;
+        justify-content: space-between;
+        border-bottom: 1px solid #44444441;
+        padding: 5px;
+    }
+    .job-cards .job-card .vacancies{
+        flex-direction: row-reverse;
+    }
+    .job-cards .job-card .apply{
+        flex-direction: row-reverse !important;
+        border: none;
+    }
+    .job-cards .job-card .data h5{
+    font-weight: 600;
+    font-size: 20px;
+    }
+    .job-cards .job-card .apply br{
+        display: none !important;
+    }
+    .recruitment-cards .recruitment-card {
+        padding: 20px;
+        margin: 10px;
+        height: 230px;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    /* career page  */
+    .job-cards .job-card .data {
+        flex-direction: column !important;
+    }
+    .job-cards .job-card .apply{
+        text-align: left !important;
+    }
+    
+    .opening .div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        
+    }
+    .opening .div input , .opening .div select {
+        width: 100%;
+        margin: 5px;
+    }
+    .opening .div button{
+        width: 60%;
+    }
 }
 @media screen and (max-width: 400px){
     
@@ -1166,5 +1279,13 @@ body {
     /* about page  */
     .why-choose-us .circle {
         max-width: 90%;
+    }
+     
+    /* Career Page  */
+    .job-cards .job-card .apply {
+        flex-direction: column !important;
+    }
+    .job-cards .job-card .data .location{
+        flex-direction: column !important;
     }
 } 
