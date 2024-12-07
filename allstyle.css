@@ -984,6 +984,15 @@ body {
     font-weight: 600;
 
 }
+
+/* SEO optimization */
+.seo-p::first-letter{
+    margin-left: 100px !important;
+    font-size: 40px;
+    color: #007BFF;
+    line-height: 40px;
+}
+
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {
     header a{
