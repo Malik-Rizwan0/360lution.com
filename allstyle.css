@@ -1072,6 +1072,7 @@ body {
 }
 
 @media screen and (min-width:768px) and (max-width: 992px){
+    /* career page  */
     .recruitment-cards .recruitment-card .icon{
         font-size: 40px;
     }
@@ -1086,6 +1087,15 @@ body {
     .recruitment-cards .col-3{
         padding: 5px;
     }
+
+    /* SEO SERVICE PAGE  */
+    .seo-hero h2{
+        font-size: 2.2rem ;
+    }
+    .seo-hero p{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1232,7 +1242,13 @@ body {
         margin: 10px;
         height: 230px;
     }
-    
+    /* Career PAGE     */
+    .seo-page p{
+        font-size: 16px !important;
+    }
+    .seo-page h4{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 576px){
     /* career page  */
@@ -1299,5 +1315,16 @@ body {
     }
     .job-cards .job-card .data .location{
         flex-direction: column !important;
+    }
+    /* SEO Service PAGE  */
+    .seo-page p{
+        font-size: 14px !important;
+    }
+     .seo-p::first-letter{
+        margin-left: 20px !important;
+        font-size: 24px;
+     }
+     .seo-page h4 {
+        font-size: 16px;
     }
 } 
