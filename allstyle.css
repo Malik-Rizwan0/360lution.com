@@ -992,7 +992,48 @@ body {
     color: #007BFF;
     line-height: 40px;
 }
+.seo-page .seo-card p::before{
+    content: '↬';
+    font-weight: 900;
+    line-height: 15px;
+    font-size: 40px;
+    color: #007BFF;
+}
+.seo-card{
+    box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+    padding: 20px ;
+    border-radius: 10px;
+    margin-top: 30px;
+}
 
+.seo-card:hover{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transform: translatey(-10px);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.seo-cards ul{
+    padding: 0px;
+}
+.seo-cards li{
+    padding: 20px !important;
+    list-style-type: none !important;
+}
+.seo-cards .seo-card{
+    margin: 0;
+}
+.seo-card .col-6{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+.seo-big-card .seo-card .col-6 img{
+    object-fit: cover;
+    height: 100%;
+    object-position: start;
+}
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {
     header a{
@@ -1087,7 +1128,6 @@ body {
     .recruitment-cards .col-3{
         padding: 5px;
     }
-
     /* SEO SERVICE PAGE  */
     .seo-hero h2{
         font-size: 2.2rem ;
@@ -1095,6 +1135,16 @@ body {
     .seo-hero p{
         width: 100%;
     }
+    .seo-cards .seo-card{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+
+    }
+    .seo-cards .seo-card  img{
+        margin: auto;
+    }
+
 
 }
 
@@ -1242,13 +1292,25 @@ body {
         margin: 10px;
         height: 230px;
     }
-    /* Career PAGE     */
+    /* SEO PAGE     */
     .seo-page p{
         font-size: 16px !important;
     }
     .seo-page h4{
         font-size: 20px;
     }
+    .seo-cards .seo-card {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        max-width: 300px;
+    }
+    .who-seo img{
+        width: 300px;
+    }
+    
 }
 @media screen and (max-width: 576px){
     /* career page  */
