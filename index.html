@@ -27,12 +27,12 @@
     <!-- Linking SwiperJS CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-<!-- 
+    <!-- 
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="faq.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css"> -->
-    
+
     <link rel="stylesheet" href="allstyle.css">
 
 </head>
@@ -72,34 +72,35 @@
                 <a href="career.html">Careers</a>
                 <a href="contact-us.html">Contact</a>
                 <button class="main-btn w-75"> Login &nbsp; <i class="fa-solid fa-right-to-bracket"></i></button>
-            </div>            
-            
+            </div>
+
         </div>
     </header>
 
     <!-- hero Section  -->
     <section class=" container-fluid hero">
         <div class="container-lg">
-        <div class="row hero-row">
-            <div class="col-6 col-md-7 px-0 py-3 p-sm-3 p-md-3 d-flex flex-column align-items-start justify-content-evenly">
-                <div>
-                    <h2>
-                        Innovative Solutions
-                    </h2>
-                    <p>
-                        We deliver cutting-edge software solutions to drive your
-                        business forward.
-                    </p>
+            <div class="row hero-row">
+                <div
+                    class="col-6 col-md-7 px-0 py-3 p-sm-3 p-md-3 d-flex flex-column align-items-start justify-content-evenly">
+                    <div>
+                        <h2>
+                            Innovative Solutions
+                        </h2>
+                        <p>
+                            We deliver cutting-edge software solutions to drive your
+                            business forward.
+                        </p>
+                    </div>
+                    <button class="main-btn">
+                        Expore Now &nbsp; <i class="fa-solid fa-play"></i>
+                    </button>
                 </div>
-                <button class="main-btn">
-                    Expore Now &nbsp; <i class="fa-solid fa-play"></i>
-                </button>
-            </div>
-            <div class="col-6 col-md-5 pt-md-5 d-flex align-items-center">
-                <img src="img/HERO.jpg" width="100%" alt="">
+                <div class="col-6 col-md-5 pt-md-5 d-flex align-items-center">
+                    <img src="img/HERO.jpg" width="100%" alt="">
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- About Section  -->
@@ -301,21 +302,44 @@
     <section class="service container-fluid  text-center py-5">
         <div class="container-fluid container-lg">
             <div class="text-start">
-                <h4>Our Services</h4>
+                <h4 id="h1">Our Services</h4>
+                <h4 id="h2">Why Choose Us?</h4>
+                <h4 id="h3">Case Studies</h4>
+                <h4 id="h4">Technology</h4>
+                <h4 id="h5">Testimonials</h4>
+                <h4 id="h6">Our Clients</h4>
+                <h4 id="h7">Blogs</h4>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-10 service-link d-flex align-items-center justify-content-around">
-                    <a href="#" class="active">Services</a>
-                    <a href="#">Why Choose Us?</a>
-                    <a href="#">Case Studies</a>
-                    <a href="#">Technology</a>
-                    <a href="#">Testimonials</a>
-                    <a href="#">Our Clients</a>
-                    <a href="#">Blogs</a>
+                    <button id="servicelink1" class="border-0 active servicelink1"
+                        onclick="service(1)">Services</button>
+                    <button id="servicelink2" class="border-0 servicelink2" onclick="service(2)">Why Choose Us?</button>
+                    <button id="servicelink3" class="border-0 servicelink3" onclick="service(3)">Case Studies</button>
+                    <button id="servicelink4" class="border-0 servicelink4" onclick="service(4)">Technology</button>
+                    <button id="servicelink5" class="border-0 servicelink5" onclick="service(5)">Testimonials</button>
+                    <button id="servicelink6" class="border-0 servicelink6" onclick="service(6)">Our Clients</button>
+                    <button id="servicelink7" class="border-0 servicelink7" onclick="service(7)">Blogs</button>
                 </div>
             </div>
+            <div class="row d-block d-md-none ">
+                <div class="col-12 col-lg-10 service-link1 d-flex align-items-center justify-content-around px-3">
+                    <select id="serviceDropdown" class="form-select border-0" onchange="service(this.value)">
+                        <option value="1" selected>Services</option>
+                        <option value="2">Why Choose Us?</option>
+                        <option value="3">Case Studies</option>
+                        <option value="4">Technology</option>
+                        <option value="5">Testimonials</option>
+                        <option value="6">Our Clients</option>
+                        <option value="7">Blogs</option>
+                    </select>
+                </div>
+            </div>
+            
         </div>
-        <div class="swiper">
+
+        <!-- service -->
+        <div id="swiper1" class="swiper swiper11 swiper1">
             <div class="slider-wrapper1">
                 <div class="card-list swiper-wrapper">
                     <div class="card-item swiper-slide">
@@ -386,11 +410,547 @@
 
                 </div>
 
-                
+
+
                 <div class="swiper-slide-button swiper-button-prev1"> <i class="fa-solid fa-arrow-left"></i></div>
                 <div class="swiper-slide-button swiper-button-next1"><i class="fa-solid fa-arrow-right"></i></div>
             </div>
         </div>
+
+        <!-- why-choose-us-card  -->
+        <div id="swiper2" class=" why_choose-us-cards swiper2">
+            <div class=" whyChooseUsCards  row container-fluid px-3 px-xl-5 mx-auto">
+                <div class="col-12 col-md-6 col-lg-3  card">
+                    <div class="card-header">
+                        <img src="img/why-choose-us-card1.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5>
+                            Expertise
+                        </h5>
+                        <p>
+                            Our team comprises skilled professionals
+                            with vast experience in softwear development
+                            ensuring high-quality, reliable solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 card">
+                    <div class="card-header">
+                        <img src="img/why-choose-us-card2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5>
+                            Customization
+                        </h5>
+                        <p>
+                            We provide tailored solutions designed to meet the specific needs and challange of your
+                            business.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 card">
+                    <div class="card-header">
+                        <img src="img/why-choose-us-card3.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5>
+                            Exceptional Support
+                        </h5>
+                        <p>
+                            We offer comprehensive support and maintenance services to ensure the smooth operation and
+                            continual improvement of...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 card">
+                    <div class="card-header">
+                        <img src="img/why-choose-us-card4.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5>
+                            Result Driven
+                        </h5>
+                        <p>
+                            We focus on delivering tangible results, helping businesses enhance their operational
+                            perfomance
+                            and achieve their strategic goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Case Studies  -->
+        <div id="swiper3" class="swiper swiper22 swiper3">
+            <div class="slider-wrapper1">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="img/case-studies-seo.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            E-commerce SEO
+                        </h5>
+                        <p class="card-desc">
+                            Achieved a 150% increase in organic traffic for an online store through effective keyword
+                            research, on-page optimization, and technical SEO improvements.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/case-studies-social.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            Social Ads ROI
+                        </h5>
+                        <p class="card-desc text-start">
+                            Boosted ROI by 40% for a brand by leveraging precise audience targeting, A/B testing, and
+                            visually compelling Facebook and Instagram ad campaigns.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/case-studies-email.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            Email Marketing Wins
+                        </h5>
+                        <p class="card-desc">
+                            Our work aims to break the vicious cycle of poverty and social isolation and to restore hope
+                            for a better future.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/case-studies-seo.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            E-commerce SEO
+                        </h5>
+                        <p class="card-desc">
+                            Achieved a 150% increase in organic traffic for an online store through effective keyword
+                            research, on-page optimization, and technical SEO improvements.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/case-studies-social.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            Social Ads ROI
+                        </h5>
+                        <p class="card-desc text-start">
+                            Boosted ROI by 40% for a brand by leveraging precise audience targeting, A/B testing, and
+                            visually compelling Facebook and Instagram ad campaigns.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="swiper-slide-button swiper-button-prev1"> <i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-slide-button swiper-button-next1"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+
+        <!-- Technology -->
+        <div id="swiper4" class="container-lg Technology swiper4 mx-auto">
+            <div class=" d-flex align-items-center justify-content-center s-tech">
+                <div style="background-color: #DE8D2D2B;">
+                    <img src="img/tech-1.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color:#FFC10738 ;">
+                    <img src="img/tech-2.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color:#068D7F3B ;">
+                    <img src="img/tech-4.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color: #448BFB2B;">
+                    <img src="img/tech5.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color:#777BB329 ;">
+                    <img src="img/tech6.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color: #448BFB2B;">
+                    <img src="img/tech5.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color:#DE8D2D2B ;">
+                    <img src="img/tech7.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color: #61B34757;">
+                    <img src="img/tech8.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color: #FF572352;">
+                    <img src="img/tech9.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color: #E5A7937A;">
+                    <img src="img/tech10.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color:#50DAFD45 ;">
+                    <img src="img/tech11.png" width="50px" height="50px" alt="">
+                </div>
+                <div style="background-color: #DE8D2D2B;">
+                    <img src="img/tech7.png" width="50px" height="50px" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Testimonials -->
+        <div id="swiper5" class=" Testimonials swiper5">
+            <div class="row">
+                <div class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-md-3 p-lg-5 text-start">
+                    <h4>
+                        What our clients say about us
+                    </h4>
+                    <p>
+                        Access advanced order types including limit, market, stop limit and dollar cost averaging. Track
+                        your total asset holdings, values and equity over time. Monitor markets, manage your portfolio,
+                        and
+                        trade crypto on the go.
+                    </p>
+                </div>
+                <div class="swiper swiper55 col-12 col-lg-7">
+                    <div class="slider-wrapper12 px-3">
+                        <div class="card-list swiper-wrapper w-100">
+                            <div class="card-item swiper-slide w-100 p-3" style="width: 100%;">
+                                <div class="card-parent d-flex w-100 border-0 my-3">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between flex-sm-row align-items-center">
+                                            <div class="d-flex align-items-end mb-1">
+                                                <img src="img/test-1.png" alt="">
+                                                <div>
+                                                    <h5>Cameron Williamson</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                                <div class="card-parent d-flex justify-content-end my-3 w-100 border-0">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="img/test2.png" alt="">
+                                                <div>
+                                                    <h5>Dianne Russell</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                                <div class="card-parent d-flex w-100 border-0">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="img/test3.png" alt="">
+                                                <div>
+                                                    <h5>Ralph Edwards</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-item swiper-slide w-100 p-3" style="width: 100%;">
+                                <div class="card-parent d-flex w-100 border-0 my-3">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-end mb-1">
+                                                <img src="img/test-1.png" alt="">
+                                                <div>
+                                                    <h5>Cameron Williamson</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                                <div class="card-parent d-flex justify-content-end my-3 w-100 border-0">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="img/test2.png" alt="">
+                                                <div>
+                                                    <h5>Dianne Russell</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                                <div class="card-parent d-flex w-100 border-0">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="img/test3.png" alt="">
+                                                <div>
+                                                    <h5>Ralph Edwards</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-item swiper-slide w-100 p-3" style="width: 100%;">
+                                <div class="card-parent d-flex w-100 border-0 my-3">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-end mb-1">
+                                                <img src="img/test-1.png" alt="">
+                                                <div>
+                                                    <h5>Cameron Williamson</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                                <div class="card-parent d-flex justify-content-end my-3 w-100 border-0">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="img/test2.png" alt="">
+                                                <div>
+                                                    <h5>Dianne Russell</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                                <div class="card-parent d-flex w-100 border-0">
+                                    <div class="card p-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="img/test3.png" alt="">
+                                                <div>
+                                                    <h5>Ralph Edwards</h5>
+                                                    <p>Bank of America</p>
+                                                </div>
+                                            </div>
+                                            <div class="star ">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <p class="test">Access the same project through five different dynamic views: a
+                                            kanban board, Gantt chart, spreadsheet, calendar or simple task list.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="swiper-slide-button swiper-button-prev1"> <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="swiper-slide-button swiper-button-next1"><i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Our Client  -->
+        <div id="swiper6" class="swiper swiper33 swiper6">
+
+            <div class="slider-wrapper1">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="img/client1.png" alt="">
+                        <h5 class="text-center">
+                            Boosting Visibility
+                        </h5>
+                        <p class="card-desc">
+                            Showcasing how our strategies helped brands achieve a strong online presence and connect
+                            with their audience effectively.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/client2.png" alt="">
+                        <h5 class="text-start">
+                            ANDROID DEVELOPMENT
+                        </h5>
+                        <p class="card-desc text-start">
+                            Application design involves creating the blueprint for software applications, outlining
+                            their structure, functionality, and user interface.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/client3.png" alt="">
+                        <h5 class="text-start">
+                            WEBSITE DEVELOPMENTdd
+                        </h5>
+                        <p class="card-desc">
+                            Our work aims to break the vicious cycle of poverty and social isolation and to restore hope
+                            for a better future.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/service1.png" alt="">
+                        <h5 class="text-start">
+                            WEBSITE DEVELOPMENT
+                        </h5>
+                        <p class="card-desc">
+                            Our work aims to break the vicious cycle of poverty and social isolation and to restore hope
+                            for a better future.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/service2.png" alt="">
+                        <h5 class="text-start">
+                            WEBSITE DEVELOPMENT
+                        </h5>
+                        <p class="card-desc">
+                            Our work aims to break the vicious cycle of poverty and social isolation and to restore hope
+                            for a better future.
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="swiper-slide-button swiper-button-prev1"> <i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-slide-button swiper-button-next1"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+        <!-- blog  -->
+        <div id="swiper7" class="swiper swiper44 swiper7">
+            <div class="slider-wrapper1">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="img/s-blog-content.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            Content Marketing Tips
+                        </h5>
+                        <p class="card-desc">
+                            Discover how creating valuable, consistent content can drive traffic, build trust, and
+                            convert leads into loyal customers.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/s-blog-social.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            Social Media Trends 2024
+                        </h5>
+                        <p class="card-desc text-start">
+                            Stay ahead in the digital landscape by exploring the latest trends reshaping social media
+                            marketing strategies this year.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/s-blog-ppc.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            PPC Advertising Guide
+                        </h5>
+                        <p class="card-desc">
+                            Learn the basics of pay-per-click advertising, including tips to create successful campaigns
+                            that maximize ROI for your business.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/s-blog-social.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            Social Media Trends 2024
+                        </h5>
+                        <p class="card-desc text-start">
+                            Stay ahead in the digital landscape by exploring the latest trends reshaping social media
+                            marketing strategies this year.
+                        </p>
+                    </div>
+                    <div class="card-item swiper-slide">
+                        <img src="img/s-blog-ppc.png" width="100%" alt="">
+                        <h5 class="text-start">
+                            PPC Advertising Guide
+                        </h5>
+                        <p class="card-desc">
+                            Learn the basics of pay-per-click advertising, including tips to create successful campaigns
+                            that maximize ROI for your business.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide-button swiper-button-prev1"> <i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-slide-button swiper-button-next1"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+
+
+
 
     </section>
 
@@ -412,7 +972,7 @@
                 </button>
             </div>
             <div class="col-10 col-md-6 m-auto">
-                <img src="img/discuss.PNG" width="100%"  alt="">
+                <img src="img/discuss.PNG" width="100%" alt="">
             </div>
         </div>
     </section>
@@ -453,7 +1013,7 @@
                         customers.
                     </p>
                 </div>
-                
+
                 <div class="col-12 col-md-6 point">
                     <button id="heading3" onclick="toggleDescription(3)">What types of content does 360lution share
                         online?
@@ -541,7 +1101,8 @@
                     </div>
 
                     <div class="lable">Select Subject?</div>
-                    <div class="input d-flex justify-content-between align-items-center flex-column flex-sm-row border-0">
+                    <div
+                        class="input d-flex justify-content-between align-items-center flex-column flex-sm-row border-0">
                         <label class="container">General Inquiry
                             <input type="radio" checked="checked" name="radio">
                             <span class="checkmark"></span>
@@ -575,44 +1136,79 @@
     <footer class="container-fluid pt-3 pt-md-5">
         <div class="container-fluid container-lg">
             <div class="text-center">
-                <img height="45px"src="img/Screenshot_2024-11-10_002314-removebg-preview 1.png" alt="">
+                <img height="45px" src="img/Screenshot_2024-11-10_002314-removebg-preview 1.png" alt="">
                 <p class="py-2">
-                    360lution Pvt. Ltd. is a fast-growing IT Company that provides holistic IT solutions to businesses across geographies We offer IT expertise in software, website, and application (iOS & Android) development; UI/UX design; and digital marketing.
+                    360lution Pvt. Ltd. is a fast-growing IT Company that provides holistic IT solutions to businesses
+                    across geographies We offer IT expertise in software, website, and application (iOS & Android)
+                    development; UI/UX design; and digital marketing.
                 </p>
             </div>
         </div>
-            <div class="row p-4">
-                <div class=" col-6 col-md-3 p-1">
-                    <div class="footer-heading">Contact</div>
-                    <div class="data">
-                        <p><i class="fa-solid fa-phone-volume"></i>&nbsp; &nbsp; +91 9151533360</p>
-                        <p><i class="fa-solid fa-envelope"></i>&nbsp; &nbsp; contact@360lution.com</p>
-                        <p><i class="fa-solid fa-location-dot"></i>&nbsp; &nbsp; 132 Dartmouth Street Boston,
-                            Massachusetts 02156 United States</p>
-                    </div>
+        <div class="row p-4">
+            <div class=" col-6 col-md-3 p-1">
+                <div class="footer-heading">Contact</div>
+                <div class="data">
+                    <p><i class="fa-solid fa-phone-volume"></i>&nbsp; &nbsp; +91 9151533360</p>
+                    <p><i class="fa-solid fa-envelope"></i>&nbsp; &nbsp; contact@360lution.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; &nbsp; 132 Dartmouth Street Boston,
+                        Massachusetts 02156 United States</p>
                 </div>
-                <div class="col-6 d-md-none">
+            </div>
+            <div class="col-6 d-md-none">
+                <div class="footer-heading">Service</div>
+                <ul>
+                    <li>Website Development</li>
+                    <li>App Development</li>
+                    <li>Software Development</li>
+                    <li>Ui/Ux Designing</li>
+                    <li>SEO Optimization</li>
+                    <li>Social Media Marketing</li>
+                </ul>
+            </div>
+            <div class="col-6 d-md-none">
+                <div class="footer-heading">Infomation</div>
+                <ul>
+                    <li>Term & Conditions</li>
+                    <li>Privacy Police </li>
+                    <li>Cancellation</li>
+                    <li>Refunds</li>
+                </ul>
+
+            </div>
+            <div class="col-6 d-md-none">
+                <div class="footer-heading">Quick Links</div>
+                <ul>
+                    <li>Techlabz Keybox</li>
+                    <li>Downloads</li>
+                    <li>Forum</li>
+                </ul>
+
+
+            </div>
+            <div class=" col-6 col-md-7 d-none d-md-flex justify-content-around">
+                <div>
                     <div class="footer-heading">Service</div>
-                        <ul>
-                            <li>Website Development</li>
-                            <li>App Development</li>
-                            <li>Software Development</li>
-                            <li>Ui/Ux Designing</li>
-                            <li>SEO Optimization</li>
-                            <li>Social Media Marketing</li>
-                        </ul>
-                </div>
-                <div class="col-6 d-md-none">
-                    <div class="footer-heading">Infomation</div>
-                        <ul>
-                            <li>Term & Conditions</li>
-                            <li>Privacy Police </li>
-                            <li>Cancellation</li>
-                            <li>Refunds</li>
-                        </ul>
+                    <ul>
+                        <li>Website Development</li>
+                        <li>App Development</li>
+                        <li>Software Development</li>
+                        <li>Ui/Ux Designing</li>
+                        <li>SEO Optimization</li>
+                        <li>Social Media Marketing</li>
+                    </ul>
 
                 </div>
-                <div class="col-6 d-md-none">
+                <div>
+                    <div class="footer-heading">Infomation</div>
+                    <ul>
+                        <li>Term & Conditions</li>
+                        <li>Privacy Police </li>
+                        <li>Cancellation</li>
+                        <li>Refunds</li>
+                    </ul>
+
+                </div>
+                <div>
                     <div class="footer-heading">Quick Links</div>
                     <ul>
                         <li>Techlabz Keybox</li>
@@ -620,50 +1216,17 @@
                         <li>Forum</li>
                     </ul>
 
-
-                </div>
-                <div class=" col-6 col-md-7 d-none d-md-flex justify-content-around">
-                    <div>
-                        <div class="footer-heading">Service</div>
-                        <ul>
-                            <li>Website Development</li>
-                            <li>App Development</li>
-                            <li>Software Development</li>
-                            <li>Ui/Ux Designing</li>
-                            <li>SEO Optimization</li>
-                            <li>Social Media Marketing</li>
-                        </ul>
-
-                    </div>
-                    <div>
-                        <div class="footer-heading">Infomation</div>
-                        <ul>
-                            <li>Term & Conditions</li>
-                            <li>Privacy Police </li>
-                            <li>Cancellation</li>
-                            <li>Refunds</li>
-                        </ul>
-
-                    </div>
-                    <div>
-                        <div class="footer-heading">Quick Links</div>
-                        <ul>
-                            <li>Techlabz Keybox</li>
-                            <li>Downloads</li>
-                            <li>Forum</li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="col-12 col-md-2 text-center">
-                    <h4>Follow Us</h4>
-                    <div class="icon">
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-discord"></i>
-                    </div>
                 </div>
             </div>
+            <div class="col-12 col-md-2 text-center">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+        </div>
         </div>
     </footer>
 

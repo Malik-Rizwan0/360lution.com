@@ -84,26 +84,41 @@ header .active {
 
 h4 {
     font-size: 26px;
+    color: #007BFF;
     font-weight: 700;
 }
+
 
 .about,
 .service {
     background: #F7FAFD;
     /* height: 100vh; */
 }
-
-.service .service-link {
+.service #h2 ,.service #h3,.service 
+#h4
+,.service #h5
+,.service #h6
+,.service #h7{
+    display: none;
+}
+.service .service-link , .service .service-link1{
     background-color: #fff;
     padding: 10px 0px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 10px 50px 10px 10px;
 }
-
-.service .service-link a {
+.service .service-link1 option{
+    outline: none;
+ 
+}
+.service .service-link button {
+    background-color: #fff;
     text-decoration: none;
     color: #242424;
     padding: 5px;
+}
+ .swiper22 , .swiper33 , .swiper44 , .Testimonials , .Technology , .why_choose-us-cards{
+    display: none;
 }
 
 .service .service-link .active,
@@ -114,6 +129,95 @@ h4 {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
+.service .why_choose-us-cards .card , .service .why_choose-us-cards .card-header{
+    border: none;
+    background-color: transparent;
+    text-align: left;
+}
+.service .why_choose-us-cards .card-header{
+    border: 3px solid #007BFF;
+    width: 200px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    height: 200px;
+    top: 50px;
+    background-color: #fff;
+    margin:auto;
+}
+.service .why_choose-us-cards .card-body{
+    border-radius: 10px;
+    padding-top: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-bottom: 0px;
+}
+.service .why_choose-us-cards .card h5{
+    text-align: center;
+}
+
+.swiper33 .card-item{
+    background-color: #327FC7 !important;
+    margin: 50px;
+    color: #fff !important;
+}
+.swiper33 .card-item img{
+    height: 100px !important;
+    width: 100px !important;
+    border-radius:100% !important;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 9999;
+    text-align: left!important;
+    top: -50px;
+    left: -50% !important;
+}
+.s-tech{
+    flex-wrap: wrap;
+}
+.s-tech div{
+    height: 120px;
+    width: 120px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 30px;
+
+}
+
+/* Testimonials */
+.Testimonials h4{
+    font-size: 40px;
+}
+.Testimonials p{
+    font-size: 20px;
+}
+.slider-wrapper12 .card-item {
+    max-width: 100% !important;
+    height: auto !important;
+    box-shadow: none !important;
+    padding: 50px 20px !important;
+}
+.slider-wrapper12 .card-item .card {
+    width: 85%;
+}
+.slider-wrapper12 .card-item img{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 100% !important;
+}
+.slider-wrapper12 .card-item i{
+    color: #FFD166;
+}
+.slider-wrapper12 .card-item p{ 
+    margin-bottom: 0px;
+}
+.slider-wrapper12 .card-item h5{
+    padding: 0px 0px 0px 10px !important;
+}
 .contact .contact-left {
     /* padding: 30px; */
     background-color: #1B3A5D;
@@ -362,7 +466,7 @@ body {
   opacity: 1;
 }
 
-.slider-wrapper .swiper-slide-button ,.slider-wrapper1 .swiper-slide-button{
+.slider-wrapper .swiper-slide-button ,.slider-wrapper1 .swiper-slide-button , .slider-wrapper12 .swiper-slide-button{
   color: black;
   /* margin-top: -55px; */
   transition: 0.2s ease;
@@ -377,7 +481,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.slider-wrapper .swiper-slide-button:hover , .slider-wrapper1 .swiper-slide-button:hover{
+.slider-wrapper .swiper-slide-button:hover , .slider-wrapper1 .swiper-slide-button:hover ,  .slider-wrapper12 .swiper-slide-button:hover{
   background-color: #1d1d1d;
   color: #fff !important;
 }
@@ -1113,6 +1217,10 @@ body {
 }
 
 @media screen and (min-width:768px) and (max-width: 992px){
+    /* index page  */
+    .slider-wrapper12 .card-item{
+        padding: 0px !important;
+    }
     /* career page  */
     .recruitment-cards .recruitment-card .icon{
         font-size: 40px;
@@ -1209,13 +1317,29 @@ body {
     .service .swiper-button-prev1{
         left:43%
     }
+    
+    .slider-wrapper12 .card-item{
+        padding: 0px !important;
+    }
+    .Testimonials h4 {
+        padding-top: 30px;
+        font-size: 24px;
+    }
     .discuss .row{
         --bs-gutter-x: 0rem;
     }
     .service .swiper-button-next1{
         left: 57%;
     }
-    
+    .s-tech div{
+        height: 70px;
+        width: 70px;
+        margin: 10px;
+    }
+    .s-tech div img{
+        width: 35px  !important;
+        height: 35px !important;
+    }
     footer .row p, footer .row li, footer .row ul{
         font-size: 11px !important;
     }
