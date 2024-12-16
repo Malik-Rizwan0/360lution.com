@@ -19,11 +19,18 @@ const mobileMenu = document.getElementById('mobileMenu'); // Mobile menu contain
 // Open menu function
 openButton.addEventListener('click', () => {
     mobileMenu.classList.add('show'); // Add 'show' class to display the menu
-});
-
-// Close menu function
-closeButton.addEventListener('click', () => {
+    mobileMenu.style.animation = "openAnimation 1s ease-in-out"; // Add 'show' class to display the menu
+    mobileMenu.style.overflow = "hidden"; // Add 'show' class to display the menu
+    openButton.style.display = "none"
+    closeButton.style.display = "block"
+  });
+  
+  // Close menu function
+  closeButton.addEventListener('click', () => {
     mobileMenu.classList.remove('show'); // Remove 'show' class to hide the menu
+    openButton.style.display = "block"
+    closeButton.style.display = "none"
+    mobileMenu.style.animation = "closeAnimation 0.5s ease-in-out";
 });
 
 
