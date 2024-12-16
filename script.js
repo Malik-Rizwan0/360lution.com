@@ -19,10 +19,11 @@ const mobileMenu = document.getElementById('mobileMenu'); // Mobile menu contain
 // Open menu function
 openButton.addEventListener('click', () => {
     mobileMenu.classList.add('show'); // Add 'show' class to display the menu
-    mobileMenu.style.animation = "openAnimation 1s ease-in-out"; // Add 'show' class to display the menu
+    mobileMenu.style.animation = "openAnimation 2s cubic-bezier(0.25, 1, 0.5, 1)"; // Add 'show' class to display the menu
     mobileMenu.style.overflow = "hidden"; // Add 'show' class to display the menu
     openButton.style.display = "none"
     closeButton.style.display = "block"
+    
   });
   
   // Close menu function
@@ -30,7 +31,7 @@ openButton.addEventListener('click', () => {
     mobileMenu.classList.remove('show'); // Remove 'show' class to hide the menu
     openButton.style.display = "block"
     closeButton.style.display = "none"
-    mobileMenu.style.animation = "closeAnimation 0.5s ease-in-out";
+    mobileMenu.style.animation = "closeAnimation 2s cubic-bezier(0.25, 1, 0.5, 1)";
 });
 
 
