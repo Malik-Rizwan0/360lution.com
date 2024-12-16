@@ -1,3 +1,16 @@
+        // For handling mobile dropdown toggle (if needed in responsive designs)
+        document.querySelectorAll('.dropdown1 > a').forEach(menuLink => {
+          menuLink.addEventListener('click', (e) => {
+              e.preventDefault();
+              const submenu = menuLink.nextElementSibling;
+              submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+          });
+      });
+      
+
+
+
+
 // Select elements
 const openButton = document.querySelector('.open'); // Button to open menu
 const closeButton = document.querySelector('.close'); // Button to close menu

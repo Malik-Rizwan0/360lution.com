@@ -25,6 +25,40 @@ header .active {
     color: #327FC7;
     border-bottom: 2px solid #327FC7;
 }
+
+/* Dropdown Styling */
+.submenu {
+    display: none;
+    position: absolute;
+    /* background-color: #444; */
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+header li {
+    /* margin: 0; */
+    list-style-type: none;
+
+}
+
+.submenu li a {
+    padding: 10px 15px;   
+    font-size: 14px;
+    display: block;
+}
+/* Show dropdown on hover */
+.menu-item:hover .submenu {
+    display: block;
+}
+
 #mobileMenu {
     position: fixed;
     top: 0;
@@ -759,7 +793,10 @@ body {
     }    
 }
 @media screen and (max-width:767px){
-    
+    header .submenu {
+        position: relative;
+        padding-left: 20px;
+    }
     .service-hero h2{
         font-size: 27px !important;
     }
