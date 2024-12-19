@@ -172,7 +172,6 @@ header .open i {
 
 h4 {
     font-size: 26px;
-    color: #007BFF;
     font-weight: 700;
 }
 
@@ -353,8 +352,22 @@ h4 {
     font-size: 18px;
 }
 
+.contact .contact-left .icon ,
+footer .icon  {
+    display: flex;
+}
+footer .icon {
+    justify-content: space-between;
+
+}
 .contact .contact-left .icon i,
 footer .icon i {
+    height: 40px ;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     font-size: 20px;
     background-color: #F6AF03;
@@ -517,7 +530,7 @@ body {
 
 .card-list .card-item {
 
-    min-width: 330px;
+    min-width: 33% !important;
     border-radius: 10px;
     backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.2);
@@ -910,8 +923,8 @@ body {
     object-fit: cover;
 }
 
-.service-website .row {
-    --bs-gutter-x: 0.2rem !important;
+.service-website .row  , .blog-section .row{
+    --bs-gutter-x: 0.rem !important;
 }
 
 .service-website-cards .col-12 {
