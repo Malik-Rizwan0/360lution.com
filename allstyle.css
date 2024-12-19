@@ -471,8 +471,8 @@ textarea {
     padding: 15px;
 }
 .blog-section .card-list .card-item{
-    max-width:100%;
-    min-width: 300px !important;
+    max-width:350px;
+    width: 100% !important;
 }
 footer {
     /* height: 100px; */
