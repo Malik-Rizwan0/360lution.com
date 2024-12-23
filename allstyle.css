@@ -506,7 +506,7 @@ footer p {
     font-size: 16px;
     color: #fff;
 }
-
+footer .row a,
 footer .row p,
 footer .row li,
 footer .row ul,
@@ -515,6 +515,7 @@ footer .row .footer-heading {
     color: #fff;
     padding: 0px;
     list-style: none;
+    text-decoration: none;
     margin-bottom: 10px;
 }
 
@@ -1498,6 +1499,34 @@ body {
     height: 100%;
     object-position: start;
 }
+
+
+/* Privacy policy  */
+.privacy .privacy-details h4 , .refund .refund-details h4{
+    line-height: 20px;
+    padding-top: 5px;
+}
+.privacy .privacy-details h4::before , .refund .refund-details h4::before{
+    color: #007BFF;
+    content: "➣";
+}
+.privacy .privacy-details p::first-letter , .refund .refund-details p::first-letter , .refund .refund-details li::first-letter{
+    margin-left: 50px;
+}
+.privacy .privacy-details p , .refund .refund-details p ,.refund .refund-details li{
+    list-style-type: none;
+    font-size: 20px !important;
+    margin-bottom: 3px;
+
+}
+.cancellation .heading{
+    font-size: 30px;
+}
+.cancellation{
+    font-size: 18px;
+}
+
+
 
 /* all page responsiveness */
 @media screen and (min-width:768px) and (max-width: 1024px) {

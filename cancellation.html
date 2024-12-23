@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360Lution</title>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Manrope:wght@200..800&family=Nanum+Myeongjo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Signika:wght@300..700&family=Vazirmatn:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- 
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css"> -->
+
+    <link rel="stylesheet" href="allstyle.css">
+
+</head>
+
+<body class="refund">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-md-3 text-center d-flex align-items-center justify-content-center">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="col-md-9 d-flex align-items-center justify-content-between d-none d-md-flex">
+                <a href="#" class="active">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <li class="menu-item dropdown">
+                    <a href="#">Services <i class="fa-solid fa-angle-down ps-2"></i></a>
+                    <ul class="submenu">
+                        <li><a href="web-dev.html">Web Development</a></li>
+                        <li><a href="web-maintaince.html">Website Maintenance</a></li>
+                        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+                        <li><a href="android-development.html">Android App Development</a></li>
+                        <li><a href="software.html">Software Development</a></li>
+                        <li><a href="ui-ux.html">UI/UX Designing</a></li>
+                        <li><a href="Seo-service.html">SEO Optimization</a></li>
+                    </ul>
+                </li>
+                <a href="about-us.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="career.html">Careers</a>
+                <a href="contact-us.html">Contact</a>
+                <button class="main-btn"> Login &nbsp; <i class="fa-solid fa-right-to-bracket"></i></button>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center d-md-none pe-4">
+                <button class="bg-white open">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </button>
+                <button class="close bg-white border-0">
+                    <i class="fa-solid fa-xmark fa-2xl"></i>
+                </button>
+            </div>
+            <div class="mobile col-12" id="mobileMenu">
+                <div class="d-flex justify-content-end w-100">
+
+                </div>
+                <a href="#" class="active">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <li class="menu-item dropdown1 w-100">
+                    <a href="#" class="d-flex align-items-center justify-content-between w-100">Services <i
+                            class="fa-solid fa-angle-down ps-2"></i></a>
+                    <ul class="submenu">
+                        <li><a href="web-dev.html">Web Development</a></li>
+                        <li><a href="web-maintaince.html">Website Maintenance</a></li>
+                        <li><a href="cloud-computing.html">Cloud Computing</a></li>
+                        <li><a href="android-development.html">Android App Development</a></li>
+                        <li><a href="software.html">Software Development</a></li>
+                        <li><a href="ui-ux.html">UI/UX Designing</a></li>
+                        <li><a href="Seo-service.html">SEO Optimization</a></li>
+                    </ul>
+                </li>
+                <a href="about-us.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="career.html">Careers</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero Section  -->
+    <section class=" container-fluid hero bg-white">
+        <div class="container-lg">
+            <div class="row hero-row">
+                <div
+                    class="col-6 col-md-7 px-0 py-3 p-sm-3 p-md-3 d-flex flex-column align-items-start justify-content-center">
+
+                    <div>
+                        <h2>
+                            Cancellation
+                        </h2>
+                        <p>
+                            We understand that plans can change, and sometimes cancellations are unavoidable. 360lution
+                            Pvt. Ltd. we strive to make the cancellation process as smooth and hassle-free as possible
+                            for our
+                            valued customers.
+                        </p>
+                    </div>
+                    <button class="main-btn">
+                        Expore Now &nbsp; <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+                <div class="col-6 col-md-5 pt-md-5 d-flex align-items-center">
+                    <img src="img/cancellation.avif" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cancellation container py-5">
+
+        <h4 class="text-center py-3 heading">
+            Steps TO Cancel Contract
+        </h4>
+        <p>
+            If you need to cancel your booking, simply visit our cancellation page and follow
+            the easy steps outlined. Please note that our cancellation policy varies depending on the type of
+            service booked and the time of cancellation. We recommend reviewing our detailed cancellation
+            terms and conditions to understand any applicable fees or refund eligibility. Should you require any
+            assistance, our customer support team is available 24/7 to help you with your cancellation requests
+            and to answer any questions you may have. Your convenience and satisfaction are our top priorities,
+            and we are committed to providing you with the best possible experience, even when your plans
+            change.
+            We understand that circumstances may change, and you may need to cancel your project with our
+            development company. To initiate the cancellation process, please follow these steps:
+
+        </p>
+        <ul>
+            <li>
+                <b>Notification:</b>
+                Inform us of your decision to cancel the project. This can be done via email, phone call, or in-person
+                meeting. Please provide the project details and reasons for cancellation, if possible.
+            </li>
+            <li>
+                <b>
+                    Review of Contract:
+                </b>
+                Our team will review the contract to determine the cancellation terms and any
+                applicable fees. We will discuss these details with you and answer any questions you may have.
+            </li>
+            <li>
+                <b>
+                    Agreement:
+                </b>
+                Once both parties agree on the cancellation terms, we will proceed with the necessary
+                paperwork. This may include signing a cancellation agreement or amendment to the original
+                contract.
+
+            </li>
+            <li>
+                <b>
+                    Project Handover:
+                </b>
+                Depending on the stage of the project, we will outline the handover process for
+                any completed work, materials, or intellectual property. This ensures a smooth transition and
+                protects both parties' interests.
+
+            </li>
+            <li>
+                <b>
+                    Financial Settlement:
+                </b>
+                If there are any outstanding payments or refunds due, we will coordinate the
+                financial settlement according to the agreed terms.
+            </li>
+            <li>
+                <b>
+                    Closure:
+                </b>
+                After completing the necessary steps, we will officially close the project and update our
+                records accordingly
+            </li>
+        </ul>
+
+
+
+    </section>
+    <footer class="container-fluid pt-3 pt-md-5">
+        <div class="container-fluid container-lg">
+            <div class="text-center">
+                <img height="45px" src="img/Screenshot_2024-11-10_002314-removebg-preview 1.png" alt="">
+                <p class="py-2">
+                    360lution Pvt. Ltd. is a fast-growing IT Company that provides holistic IT solutions to businesses
+                    across geographies We offer IT expertise in software, website, and application (iOS & Android)
+                    development; UI/UX design; and digital marketing.
+                </p>
+            </div>
+        </div>
+        <div class="row p-4">
+            <div class=" col-6 col-md-3 p-1">
+                <div class="footer-heading">Contact</div>
+                <div class="data">
+                    <p><i class="fa-solid fa-phone-volume"></i>&nbsp; &nbsp; +91 9151533360</p>
+                    <p><i class="fa-solid fa-envelope"></i>&nbsp; &nbsp; contact@360lution.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>&nbsp; &nbsp; 132 Dartmouth Street Boston,
+                        Massachusetts 02156 United States</p>
+                </div>
+            </div>
+            <div class="col-6 d-md-none">
+                <div class="footer-heading">Service</div>
+                <ul>
+                    <li>Website Development</li>
+                    <li>App Development</li>
+                    <li>Software Development</li>
+                    <li>Ui/Ux Designing</li>
+                    <li>SEO Optimization</li>
+                    <li>Social Media Marketing</li>
+                </ul>
+            </div>
+            <div class="col-6 d-md-none">
+                <div class="footer-heading">Infomation</div>
+                <ul>
+                    <li>Term & Conditions</li>
+                    <li>Privacy Police </li>
+                    <li>Cancellation</li>
+                    <li>Refunds</li>
+                </ul>
+
+            </div>
+            <div class="col-6 d-md-none">
+                <div class="footer-heading">Quick Links</div>
+                <ul>
+                    <li>Techlabz Keybox</li>
+                    <li>Downloads</li>
+                    <li>Forum</li>
+                </ul>
+
+
+            </div>
+            <div class=" col-6 col-md-7 d-none d-md-flex justify-content-around">
+                <div>
+                    <div class="footer-heading">Service</div>
+                    <ul>
+                        <li>Website Development</li>
+                        <li>App Development</li>
+                        <li>Software Development</li>
+                        <li>Ui/Ux Designing</li>
+                        <li>SEO Optimization</li>
+                        <li>Social Media Marketing</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <div class="footer-heading">Infomation</div>
+                    <ul>
+                        <li><a href="term&condition.html">Term & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Police </a></li>
+                        <li><a href="cancellation.html">Cancellation </a></li>
+                        <li><a href="refund.html">Refunds</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <div class="footer-heading">Quick Links</div>
+                    <ul>
+                        <li>Techlabz Keybox</li>
+                        <li>Downloads</li>
+                        <li>Forum</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-2 text-center">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
